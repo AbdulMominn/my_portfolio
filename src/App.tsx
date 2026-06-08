@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from "react";
 import "./App.css";
 
 
-
 /* ─── DATA ──────────────────────────────────────────────────── */
 
 const SKILLS = {
@@ -396,7 +395,14 @@ function HeroSection() {
 
             <a href="https://www.linkedin.com/in/abdul-momin-1561b8203" target="_blank" rel="noreferrer" className="hero-link">LinkedIn</a>
 
-            <a href="https://github.com/yourhandle" target="_blank" rel="noreferrer" className="hero-link">GitHub</a>
+            <a
+                href="https://docs.google.com/document/d/1eoBIwncNVOXNAYVIgUFBr4m0_2Lq-MVF1RmuO_bxVvs/export?format=pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="hero-link hero-link-resume"
+            >
+              ↓ Resume
+            </a>
 
           </div>
 
@@ -647,53 +653,45 @@ function EducationSection() {
 
 
 function Nav() {
-
   const [scrolled, setScrolled] = useState(false);
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-
     const h = () => setScrolled(window.scrollY > 60);
-
     window.addEventListener("scroll", h);
-
     return () => window.removeEventListener("scroll", h);
-
   }, []);
 
   const links = [["Experience","#experience"],["Projects","#projects"],["Skills","#skills"],["Education","#education"]];
 
   return (
-
-      <nav className={`nav ${scrolled ? "nav-scrolled" : ""}`}>
-
-        <div className="nav-inner">
-
-          <div className="nav-logo">AM</div>
-
-          <div className={`nav-links ${menuOpen ? "nav-links-open" : ""}`}>
-
-            {links.map(([label, href]) => (
-
-                <a key={label} href={href} className="nav-link" onClick={() => setMenuOpen(false)}>{label}</a>
-
-            ))}
-
+      <>
+        <nav className={`nav ${scrolled ? "nav-scrolled" : ""}`}>
+          <div className="nav-inner">
+            <div className="nav-logo">AM</div>
+            {/* Desktop links */}
+            <div className="nav-links-desktop">
+              {links.map(([label, href]) => (
+                  <a key={label} href={href} className="nav-link">{label}</a>
+              ))}
+            </div>
+            <button className="nav-hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="menu">
+              <span /><span /><span />
+            </button>
           </div>
+        </nav>
 
-          <button className="nav-hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="menu">
-
-            <span /><span /><span />
-
-          </button>
-
-        </div>
-
-      </nav>
-
+        {/* Mobile overlay — lives outside <nav> so fixed positioning works correctly */}
+        {menuOpen && (
+            <div className="nav-mobile-overlay">
+              <button className="nav-close" onClick={() => setMenuOpen(false)} aria-label="close menu">✕</button>
+              {links.map(([label, href]) => (
+                  <a key={label} href={href} className="nav-link" onClick={() => setMenuOpen(false)}>{label}</a>
+              ))}
+            </div>
+        )}
+      </>
   );
-
 }
 
 
