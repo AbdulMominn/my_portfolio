@@ -363,7 +363,12 @@ function HeroSection() {
 
       <section className="hero">
 
-        <div className="hero-bg-parallax" />
+        <div
+            className="hero-bg-parallax"
+            style={{
+              transform: `translate(${mousePos.x}px, ${mousePos.y}px)`
+            }}
+        />
 
         <div className="hero-content">
 
