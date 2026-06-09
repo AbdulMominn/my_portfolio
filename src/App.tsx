@@ -383,11 +383,9 @@ function HeroSection() {
 
           <p className="hero-tagline">
 
-            Full-Stack Engineer, AI/ML Developer &amp; DevOps
+            Full-Stack Developer, AI/ML Engineer &amp; DevOps
 
           </p>
-
-
 
           <div className="hero-links">
 
@@ -396,7 +394,7 @@ function HeroSection() {
             <a href="https://www.linkedin.com/in/abdul-momin-1561b8203" target="_blank" rel="noreferrer" className="hero-link">LinkedIn</a>
 
             <a
-                href="https://docs.google.com/document/d/1eoBIwncNVOXNAYVIgUFBr4m0_2Lq-MVF1RmuO_bxVvs/export?format=pdf"
+                href="https://docs.google.com/document/d/1WuUsIvcECETVdtYV854zA-mKcKp2Ifv8UbReYrCFlM0/export?format=pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="hero-link hero-link-resume"
