@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap");
+
+:root {
+  color-scheme: dark;
+  --color-bg: #0d120d;
+  --color-bg-deep: #090d09;
+  --color-surface: rgba(245, 241, 225, 0.055);
+  --color-surface-hover: rgba(245, 241, 225, 0.085);
+  --color-surface-strong: rgba(17, 24, 17, 0.78);
+  --color-border: rgba(240, 234, 216, 0.12);
+  --color-border-strong: rgba(184, 186, 144, 0.5);
+  --color-cream: #f2eddc;
+  --color-cream-soft: #d9d4c3;
+  --color-muted: #aaa99d;
+  --color-olive: #b8ba90;
+  --color-olive-bright: #d1d3a5;
+  --color-green: #74885c;
+  --color-green-deep: #263626;
+  --color-focus: #e1d59d;
+  --font-display: "Anton SC", Impact, sans-serif;
+  --font-body: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+  --radius-sm: 0.65rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.4rem;
+  --shadow-card: 0 24px 80px rgba(0, 0, 0, 0.18);
+  --shadow-card-hover: 0 30px 90px rgba(0, 0, 0, 0.26);
+  --shell: 1220px;
+}
