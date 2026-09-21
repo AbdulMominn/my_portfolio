@@ -58,10 +58,6 @@ export const EXPERIENCE: Experience[] = [
         profiles: ["ai", "cloud", "solutions"],
       },
       {
-        text: "Built supporting Python and Flask services and evaluated LLM access to infrastructure data from a security perspective.",
-        profiles: ["ai", "backend", "cloud"],
-      },
-      {
         text: "Presented the implementation and findings to more than 50 industry professionals.",
         profiles: ["solutions", "software"],
       },
@@ -87,7 +83,7 @@ export const PROJECTS: Project[] = [
     title: "Keep Dishes Going",
     subtitle: "Food-ordering marketplace",
     summary:
-      "Developed in a university team project, connecting customer ordering, restaurant workflows, payments, identity, and asynchronous delivery integration.",
+      "Developed in a team project, connecting customer ordering, restaurant workflows, payments, identity, and asynchronous delivery integration.",
     engineering:
       "Domain modelling with a ports-and-adapters structure, secured REST APIs, persistence, and external service integration.",
     technologies: [
@@ -112,7 +108,7 @@ export const PROJECTS: Project[] = [
     title: "Bandit Games",
     subtitle: "Board-game platform with applied AI",
     summary:
-      "Built as part of a team: a full-stack board-game platform with separate AI experiments for gameplay, retrieval, and model-supported analysis.",
+      "Built a gaming platform in a team: a full-stack board-game platform with separate AI experiments for gameplay, retrieval, and model-supported analysis.",
     engineering:
       "Java and Python services, OIDC security, messaging, containerized development, handwritten MCTS, RAG, and reproducible ML workflows.",
     technologies: [
@@ -145,7 +141,7 @@ export const PROJECTS: Project[] = [
     title: "HolmesGPT Incident Response",
     subtitle: "AI-assisted Kubernetes investigation",
     summary:
-      "Implemented for the FlowFactor industry lab to investigate synthetic Kubernetes incidents using cluster context, monitoring data, and an LLM-assisted workflow.",
+      "Implemented for the FlowFactor industry to investigate Kubernetes incidents using HolmesGPT while considering cluster context, monitoring data, and automation of that process.",
     engineering:
       "Infrastructure as code, observability tooling, Slack webhooks, Gemini integration, and security-aware access to infrastructure data.",
     technologies: [
@@ -167,7 +163,7 @@ export const PROJECTS: Project[] = [
     title: "Intel Image Classification",
     subtitle: "Computer-vision model study",
     summary:
-      "Built in a university team project to compare a custom CNN with frozen ImageNet-pretrained ResNet-18 and EfficientNet-B0 feature extractors.",
+      "Built a system to compare a custom CNN with frozen ImageNet-pretrained ResNet-18 and EfficientNet-B0 feature extractors.",
     engineering:
       "Training and validation loops, augmentation, checkpointing, multiclass evaluation, confusion matrices, and a manual Grad-CAM implementation.",
     technologies: [
