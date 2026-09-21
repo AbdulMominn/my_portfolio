@@ -83,7 +83,7 @@ export const PROJECTS: Project[] = [
     title: "Keep Dishes Going",
     subtitle: "Food-ordering marketplace",
     summary:
-      "Developed in a team project, connecting customer ordering, restaurant workflows, payments, identity, and asynchronous delivery integration.",
+      "Developed a food ordering platform, connecting customer ordering, restaurant workflows, payments, identity, and asynchronous delivery integration.",
     engineering:
       "Domain modelling with a ports-and-adapters structure, secured REST APIs, persistence, and external service integration.",
     technologies: [
